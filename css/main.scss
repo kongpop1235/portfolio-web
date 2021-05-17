@@ -1,0 +1,38 @@
+.font-50{
+    font-size: 50px;
+}
+.font-70{
+    font-size: 70px;
+}
+
+@for $i from 1 through 9 {
+    .fw-#{$i}{
+        font-weight: #{$i*100};
+    }
+}
+
+nav {
+    display:flex;
+}
+
+nav div ul {
+    display:flex;
+    list-style: none;
+    justify-content: space-between;
+}
+
+li{
+    list-style: none;
+    padding: auto;
+    display: inline;
+}
+
+a {
+    text-decoration: none !important;
+    
+}
+
+#section-home {
+    position: absolute;
+    z-index: 5;
+}
