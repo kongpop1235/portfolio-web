@@ -10,10 +10,13 @@
     <link rel="stylesheet" href="/css/main.css">
 
     <link rel="stylesheet" href="/theme/css/bootstrap-theme.css">
-
+    <link rel="stylesheet" href="/theme/node_modules/bootstrap/dist/css/bootstrap.min.css">
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="/theme/node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/typed.js@latest/lib/typed.min.js"></script>
     <script src="/assets/demos.js"></script>
+    <script src="/theme/node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+
 </head>
 
 <body class="bg-dark_gray text-white py-xl-3 px-xxxl-6 font-mono">
@@ -26,7 +29,7 @@
                 <ul class="my-auto m-0 p-0 fs-5 reset">
                     <li><a id="btn-home" href="#">HOME</a></li>
                     <li><a id="btn-about" href="#">ABOUT_ME</a></li>
-                    <li><a href="#">EDUCATION</a></li>
+                    <li><a id="btn-education" href="#">EDUCATION</a></li>
                     <li><a href="#">PORTFOLIO</a></li>
                     <li><a href="#">CONTACT</a></li>
                 </ul>
@@ -35,23 +38,36 @@
         <br>
     </header>
     <article>
-        <section class="container-fluid d-none" id="s-home">
+        <section class="container-fluid d-block" id="s-home">
             <div class="row">
                 <div class="col-12 p-0 fs-1">
                     <span class="home"></span>
                 </div>
+                <div class="col-12 p-0 fs-3 fw-6">
+                    <span class="home-p"></span>
+                </div>
             </div>
         </section>
-        <section class="container-fluid d-block" id="s-about">
+        <section class="container-fluid d-none" id="s-about">
             <div class="row">
                 <div class="col-5 p-0 fs-3">
-                    <span class="about1"></span>
+                    <span class="about"></span>
                 </div>
                 <div class="col-5 p-0 fs-3">
-                    <span class="about2"></span>
+                    <span class="skill"></span>
                 </div>
                 <div class="col-2 p-0 fs-3">
-                    <span class="about3"></span>
+                    <span class="hobbies"></span>
+                </div>
+            </div>
+        </section>
+        <section class="container-fluid d-none" id="s-education">
+            <div class="row">
+                <div class="col-6 p-0 fs-3">
+                    <span class="high_school"></span>
+                </div>
+                <div class="col-6 p-0 fs-3">
+                    <span class="bachelor"></span>
                 </div>
             </div>
         </section>
@@ -59,6 +75,20 @@
             <p>Copyright&copy; 2021 Kongpop Ruschatapaparpong All right reserved</p>
         </footer>
     </article>
+    <script>
+        $(document).ready(function () {
+            $('[data-toggle="popover"]').popover();
+            var popoverTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="popover"]'))
+            var popoverList = popoverTriggerList.map(function (popoverTriggerEl) {
+                return new bootstrap.Popover(popoverTriggerEl)
+            })
+        });
+        $('.txt').html(function (i, html) {
+            var chars = $.trim(html).split("");
+
+            return '<span>' + chars.join('</span><span>') + '</span>';
+        });
+    </script>
 </body>
 
 </html>
