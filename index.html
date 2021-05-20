@@ -22,15 +22,14 @@
 <body class="bg-dark_gray text-white py-xl-3 px-xxxl-6 font-mono">
     <header class="font-family container-fluid border-bottom p-0" id="header">
         <nav>
-            <div class="fs-1 p-0 col-6" id="brand-w">
+            <div class="fs-1 p-0 col-8" id="brand-w">
                 <span class="font-cursive" id="brand"></span>
             </div>
-            <div class="my-auto col-6 mx-auto p-0">
+            <div class="my-auto col-4 mx-auto p-0">
                 <ul class="my-auto m-0 p-0 fs-5 reset">
                     <li><a id="btn-home" href="#">HOME</a></li>
                     <li><a id="btn-about" href="#">ABOUT_ME</a></li>
-                    <li><a id="btn-education" href="#">EDUCATION</a></li>
-                    <li><a href="#">PORTFOLIO</a></li>
+                    <li><a id="btn-portfolio" href="#">PORTFOLIO</a></li>
                     <li><a href="#">CONTACT</a></li>
                 </ul>
             </div>
@@ -38,12 +37,12 @@
         <br>
     </header>
     <article>
-        <section class="container-fluid d-block" id="s-home">
+        <section class="container-fluid d-none" id="s-home">
             <div class="row">
                 <div class="col-12 p-0 fs-1">
                     <span class="home"></span>
                 </div>
-                <div class="col-12 p-0 fs-3 fw-6">
+                <div class="col-12 p-0 fs-3 fw-5">
                     <span class="home-p"></span>
                 </div>
             </div>
@@ -61,13 +60,23 @@
                 </div>
             </div>
         </section>
-        <section class="container-fluid d-none" id="s-education">
+        <section class="container-fluid d-block" id="s-portfolio">
             <div class="row">
-                <div class="col-6 p-0 fs-3">
-                    <span class="high_school"></span>
+                <div class="col-12 p-0 fs-3">
+                    <div class="border m-3 text-center">
+                        <span class="portfolio"></span>
+                    </div>                    
                 </div>
                 <div class="col-6 p-0 fs-3">
-                    <span class="bachelor"></span>
+                    <div class="border m-3 p-5">
+                        <div id=""></div>
+                        <span class="pizaaria"></span>
+                    </div>
+                </div>
+                <div class="col-6 p-0 fs-3">
+                    <div class="border m-3 p-5">
+                        <span class="abblab"></span>
+                    </div>
                 </div>
             </div>
         </section>

@@ -13,7 +13,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
 document.addEventListener('DOMContentLoaded', function () {
   document.querySelector('.reset').addEventListener('click', function () {
-    s_home.reset(), s_home_p.reset(), s_about.reset(), skill.reset(), hobbies.reset(), high_school.reset();
+    s_home.reset(), s_home_p.reset(), s_about.reset(), skill.reset(), hobbies.reset(), portfolio.reset(), pizza.reset(), applab.reset();
   });
 
   var s_home = new Typed('.home', {
@@ -30,20 +30,19 @@ document.addEventListener('DOMContentLoaded', function () {
 
   var s_home_p = new Typed('.home-p', {
     strings: [
-      '<span class="">Hello, My name is Kongpop.</span>'
+      'I am new to building the web. But I would love to study how it works. I try to keep improving myself. In the future, I plan to do more back-end developers, but nowadays, I am still focused on font-end learning.'
     ],
-    typeSpeed: 40,
-    backSpeed: 30,
-    smartBackspace: true,
+    typeSpeed: 20,
     loop: false,
   });
 
   var s_about = new Typed('.about', {
     strings: [
-      '<div class="border-bottom me-5 mb-3"><span class="fs-1 fw-9">About Me</span></div>NAME : Kongpop<br>SURNAME : Ruschatapaparpong<br>AGE : 23<br>GENDER : Male<br>NATIONALITY : Thai<br>ADDRESS : Thailand, Bangkok<br>MOBILE : 0876152508'
+      'Load about^500.^500.^500.^500',
+      '<div class="border-bottom me-5 mb-3"><span class="fs-1 fw-9">About Me</span></div>NAME : Kongpop<br>SURNAME : Ruschatapaparpong<br>AGE : 23<br>GENDER : Male<br>NATIONALITY : Thai<br>ADDRESS : Thailand, Bangkok<br>MOBILE : 0876152508<br>GRADUATED : Thai-Nichi Institute of Technology'      
     ],
     typeSpeed: 40,
-    backSpeed: 0,
+    backSpeed: 20,
     smartBackspace: false,
     loop: false,
     startDelay: 0
@@ -51,6 +50,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
   var skill = new Typed('.skill', {
     strings: [
+      'Load skill^500.^500.^500.^500',
       '<div class="border-bottom me-5 mb-3"><span class="fs-1 fw-9">Codeing skill</span></div>'+
       '<svg xmlns="http://www.w3.org/2000/svg"  viewBox="0 0 48 48" width="25px" height="25px"><path fill="#E65100" d="M41,5H7l3,34l14,4l14-4L41,5L41,5z"/><path fill="#FF6D00" d="M24 8L24 39.9 35.2 36.7 37.7 8z"/><path fill="#FFF" d="M24,25v-4h8.6l-0.7,11.5L24,35.1v-4.2l4.1-1.4l0.3-4.5H24z M32.9,17l0.3-4H24v4H32.9z"/><path fill="#EEE" d="M24,30.9v4.2l-7.9-2.6L15.7,27h4l0.2,2.5L24,30.9z M19.1,17H24v-4h-9.1l0.7,12H24v-4h-4.6L19.1,17z"/></svg><span style="color:#FF6D00"> HTML</span><br>'+
       '<svg xmlns="http://www.w3.org/2000/svg"  viewBox="0 0 48 48" width="25px" height="25px"><path fill="#0277BD" d="M41,5H7l3,34l14,4l14-4L41,5L41,5z"/><path fill="#039BE5" d="M24 8L24 39.9 35.2 36.7 37.7 8z"/><path fill="#FFF" d="M33.1 13L24 13 24 17 28.9 17 28.6 21 24 21 24 25 28.4 25 28.1 29.5 24 30.9 24 35.1 31.9 32.5 32.6 21 32.6 21z"/><path fill="#EEE" d="M24,13v4h-8.9l-0.3-4H24z M19.4,21l0.2,4H24v-4H19.4z M19.8,27h-4l0.3,5.5l7.9,2.6v-4.2l-4.1-1.4L19.8,27z"/></svg><span style="color:#039BE5;"> CSS</span><br>'+
@@ -63,32 +63,56 @@ document.addEventListener('DOMContentLoaded', function () {
       '<svg green;" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 25 25" width="25px" height="25px"><g id="surface56339444"><path style=" stroke:none;fill-rule:nonzero;fill:rgb(60.784316%,34.901962%,71.372551%);fill-opacity:1;" d="M 12.5 2.082031 C 6.757812 2.082031 2.082031 6.757812 2.082031 12.5 C 2.082031 18.242188 6.757812 22.917969 12.5 22.917969 C 18.242188 22.917969 22.917969 18.242188 22.917969 12.5 C 22.917969 6.757812 18.242188 2.082031 12.5 2.082031 Z M 12.5 3.644531 C 17.398438 3.644531 21.355469 7.601562 21.355469 12.5 C 21.355469 16.492188 18.726562 19.855469 15.105469 20.964844 L 15.105469 18.300781 C 15.105469 17.304688 14.53125 16.453125 13.703125 16.027344 C 15.335938 15.714844 16.683594 14.789062 17.316406 13.546875 C 17.949219 12.300781 17.792969 10.886719 16.894531 9.75 C 17.125 9.039062 17.382812 7.792969 16.769531 6.808594 C 15.589844 6.808594 14.824219 7.621094 14.460938 8.125 C 13.839844 7.921875 13.171875 7.8125 12.5 7.8125 C 11.828125 7.8125 11.160156 7.917969 10.535156 8.121094 C 10.171875 7.617188 9.410156 6.808594 8.230469 6.808594 C 7.527344 7.9375 7.960938 9.148438 8.195312 9.640625 C 7.234375 10.773438 7.03125 12.210938 7.652344 13.484375 C 8.269531 14.761719 9.628906 15.710938 11.292969 16.03125 C 10.613281 16.382812 10.101562 17.019531 9.945312 17.789062 L 9.261719 17.789062 C 8.585938 17.789062 8.324219 17.515625 7.960938 17.050781 C 7.597656 16.589844 7.210938 16.277344 6.746094 16.148438 C 6.496094 16.121094 6.324219 16.3125 6.542969 16.484375 C 7.28125 16.984375 7.335938 17.808594 7.628906 18.347656 C 7.898438 18.832031 8.453125 19.269531 9.078125 19.269531 L 9.894531 19.269531 L 9.894531 20.964844 C 6.273438 19.855469 3.644531 16.492188 3.644531 12.5 C 3.644531 7.601562 7.601562 3.644531 12.5 3.644531 Z M 12.5 3.644531 "/></g></svg><span class="text-uppercase" style="color:#9B59B6;"> github</span>'
     ],
     typeSpeed: 40,
-    backSpeed: 0,
+    backSpeed: 20,
     smartBackspace: false,
     loop: false,
-    startDelay: 0
+    startDelay: 20
   });
   var hobbies = new Typed('.hobbies', {
     strings: [
-      '<div class="border-bottom me-5 mb-3"><span class="fs-1 fw-9"><span>H</span><span>o</span><span>b</span><span>b</span><span>i</span><span>e</span><span>s</span></span></div>'+
+      'Load hobbies^500.^500.^500.^500',
+      '<div class="border-bottom me-5 mb-3"><span class="fs-1 fw-9">Hobbies</span></div>'+
       '<span class="txt anim-text-flow"><svg xmlns="http://www.w3.org/2000/svg"  viewBox="0 0 64 64" width="25px" height="25px"><linearGradient id="7VQF0sKTAgnp1emj6oowda" x1="32" x2="32" y1="10.75" y2="53.762" gradientUnits="userSpaceOnUse" spreadMethod="reflect"><stop offset="0" stop-color="#1a6dff"/><stop offset="1" stop-color="#c822ff"/></linearGradient><path fill="url(#7VQF0sKTAgnp1emj6oowda)" d="M58,18h-4.538c-0.443,0-0.835-0.282-0.975-0.702l-0.627-1.877 C51.179,13.375,49.271,12,47.114,12H16.886c-2.157,0-4.064,1.375-4.746,3.421l-0.627,1.877C11.373,17.718,10.981,18,10.538,18H6 c-1.654,0-3,1.346-3,3v22c0,1.654,1.346,3,3,3h4.538c0.443,0,0.835,0.282,0.976,0.703l0.626,1.876 C12.821,50.625,14.729,52,16.886,52h30.229c2.157,0,4.064-1.375,4.746-3.421l0.627-1.877c0.14-0.42,0.531-0.702,0.975-0.702H58 c1.654,0,3-1.346,3-3V21C61,19.346,59.654,18,58,18z M59,43c0,0.551-0.448,1-1,1h-4.538c-1.307,0-2.461,0.832-2.872,2.07 l-0.626,1.876C49.554,49.175,48.409,50,47.114,50H16.886c-1.295,0-2.439-0.825-2.85-2.054l-0.625-1.875 C12.999,44.832,11.845,44,10.538,44H6c-0.552,0-1-0.449-1-1V21c0-0.551,0.448-1,1-1h4.538c1.307,0,2.461-0.832,2.872-2.07 l0.626-1.876c0.41-1.229,1.555-2.054,2.85-2.054h30.229c1.295,0,2.439,0.825,2.85,2.054l0.626,1.876 c0.412,1.238,1.566,2.07,2.872,2.07H58c0.552,0,1,0.449,1,1V43z"/><linearGradient id="7VQF0sKTAgnp1emj6oowdb" x1="32" x2="32" y1="10.75" y2="53.762" gradientUnits="userSpaceOnUse" spreadMethod="reflect"><stop offset="0" stop-color="#1a6dff"/><stop offset="1" stop-color="#c822ff"/></linearGradient><path fill="url(#7VQF0sKTAgnp1emj6oowdb)" d="M46,20H18c-1.654,0-3,1.346-3,3v18c0,1.654,1.346,3,3,3h28c1.654,0,3-1.346,3-3V23 C49,21.346,47.654,20,46,20z M47,41c0,0.551-0.448,1-1,1H18c-0.552,0-1-0.449-1-1V23c0-0.551,0.448-1,1-1h28c0.552,0,1,0.449,1,1V41 z"/><linearGradient id="7VQF0sKTAgnp1emj6oowdc" x1="54" x2="54" y1="10.75" y2="53.762" gradientUnits="userSpaceOnUse" spreadMethod="reflect"><stop offset="0" stop-color="#1a6dff"/><stop offset="1" stop-color="#c822ff"/></linearGradient><path fill="url(#7VQF0sKTAgnp1emj6oowdc)" d="M55,26h-2c-1.103,0-2,0.897-2,2v2c0,1.103,0.897,2,2,2h2c1.103,0,2-0.897,2-2v-2 C57,26.897,56.103,26,55,26z M55,30h-2v-2h2V30z"/><linearGradient id="7VQF0sKTAgnp1emj6oowdd" x1="54" x2="54" y1="10.75" y2="53.762" gradientUnits="userSpaceOnUse" spreadMethod="reflect"><stop offset="0" stop-color="#1a6dff"/><stop offset="1" stop-color="#c822ff"/></linearGradient><path fill="url(#7VQF0sKTAgnp1emj6oowdd)" d="M55,34h-2c-1.103,0-2,0.897-2,2v2c0,1.103,0.897,2,2,2h2c1.103,0,2-0.897,2-2v-2 C57,34.897,56.103,34,55,34z M55,38h-2v-2h2V38z"/><linearGradient id="7VQF0sKTAgnp1emj6oowde" x1="10" x2="10" y1="10.75" y2="53.762" gradientUnits="userSpaceOnUse" spreadMethod="reflect"><stop offset="0" stop-color="#1a6dff"/><stop offset="1" stop-color="#c822ff"/></linearGradient><path fill="url(#7VQF0sKTAgnp1emj6oowde)" d="M11 29L9 29 9 31 7 31 7 33 9 33 9 35 11 35 11 33 13 33 13 31 11 31z"/><linearGradient id="7VQF0sKTAgnp1emj6oowdf" x1="32" x2="32" y1="10.75" y2="53.762" gradientUnits="userSpaceOnUse" spreadMethod="reflect"><stop offset="0" stop-color="#1a6dff"/><stop offset="1" stop-color="#c822ff"/></linearGradient><path fill="url(#7VQF0sKTAgnp1emj6oowdf)" d="M30 46H34V48H30z"/><linearGradient id="7VQF0sKTAgnp1emj6oowdg" x1="38" x2="38" y1="10.75" y2="53.762" gradientUnits="userSpaceOnUse" spreadMethod="reflect"><stop offset="0" stop-color="#1a6dff"/><stop offset="1" stop-color="#c822ff"/></linearGradient><path fill="url(#7VQF0sKTAgnp1emj6oowdg)" d="M36 46H40V48H36z"/><linearGradient id="7VQF0sKTAgnp1emj6oowdh" x1="26" x2="26" y1="10.75" y2="53.762" gradientUnits="userSpaceOnUse" spreadMethod="reflect"><stop offset="0" stop-color="#1a6dff"/><stop offset="1" stop-color="#c822ff"/></linearGradient><path fill="url(#7VQF0sKTAgnp1emj6oowdh)" d="M24 46H28V48H24z"/><linearGradient id="7VQF0sKTAgnp1emj6oowdi" x1="38" x2="38" y1="28.833" y2="33.519" gradientUnits="userSpaceOnUse" spreadMethod="reflect"><stop offset="0" stop-color="#6dc7ff"/><stop offset="1" stop-color="#e6abff"/></linearGradient><path fill="url(#7VQF0sKTAgnp1emj6oowdi)" d="M38 29A2 2 0 1 0 38 33A2 2 0 1 0 38 29Z"/><linearGradient id="7VQF0sKTAgnp1emj6oowdj" x1="26" x2="26" y1="28.833" y2="33.519" gradientUnits="userSpaceOnUse" spreadMethod="reflect"><stop offset="0" stop-color="#6dc7ff"/><stop offset="1" stop-color="#e6abff"/></linearGradient><path fill="url(#7VQF0sKTAgnp1emj6oowdj)" d="M26 29A2 2 0 1 0 26 33A2 2 0 1 0 26 29Z"/><linearGradient id="7VQF0sKTAgnp1emj6oowdk" x1="32" x2="32" y1="32.5" y2="37.417" gradientUnits="userSpaceOnUse" spreadMethod="reflect"><stop offset="0" stop-color="#6dc7ff"/><stop offset="1" stop-color="#e6abff"/></linearGradient><path fill="url(#7VQF0sKTAgnp1emj6oowdk)" d="M29,34c0,1.657,1.343,3,3,3c1.657,0,3-1.343,3-3v-1h-6V34z"/></svg> <span>G</span><span>A</span><span>M</span><span>E</span></span><br>'+
       '<span class="txt anim-text-flow"><svg xmlns="http://www.w3.org/2000/svg"  viewBox="0 0 64 64" width="25px" height="25px"><linearGradient id="QDO_sBS2xVZhTuMCWVRyQa" x1="44" x2="44" y1="14.333" y2="23.002" gradientUnits="userSpaceOnUse" spreadMethod="reflect"><stop offset="0" stop-color="#6dc7ff"/><stop offset="1" stop-color="#e6abff"/></linearGradient><path fill="url(#QDO_sBS2xVZhTuMCWVRyQa)" d="M44 15A4 4 0 1 0 44 23A4 4 0 1 0 44 15Z"/><linearGradient id="QDO_sBS2xVZhTuMCWVRyQb" x1="32" x2="32" y1="3.667" y2="58.99" gradientUnits="userSpaceOnUse" spreadMethod="reflect"><stop offset="0" stop-color="#1a6dff"/><stop offset="1" stop-color="#c822ff"/></linearGradient><path fill="url(#QDO_sBS2xVZhTuMCWVRyQb)" d="M57,19c0-7.168-5.832-13-13-13c-3.475,0-6.74,1.352-9.195,3.806 c-1.222,1.221-2.159,2.646-2.803,4.194H14c-1.654,0-3,1.346-3,3v1h-1c-1.654,0-3,1.346-3,3v34c0,1.654,1.346,3,3,3h32 c1.654,0,3-1.346,3-3.001L44.999,54H46c1.654,0,3-1.346,3-3V31h-0.049c1.567-0.645,3.01-1.587,4.244-2.819 C55.648,25.729,57,22.469,57,19z M13,17c0-0.552,0.448-1,1-1h17.353c-0.153,0.654-0.265,1.32-0.316,2H13V17z M47,51 c0,0.552-0.448,1-1,1h-1.002l-0.012-20.053c0.684-0.051,1.355-0.164,2.014-0.318V51z M43.998,30c-0.004,0-0.008,0-0.012,0h-1.002 L43,55.008C43,55.56,42.552,56,42,56H10c-0.552,0-1-0.448-1-1V21c0-0.552,0.448-1,1-1h23v-1.001c0-2.939,1.141-5.701,3.218-7.778 C38.296,9.145,41.06,8.002,44,8.002c6.065,0,11,4.937,11,11.002c0,2.935-1.143,5.696-3.219,7.77C49.703,28.85,46.939,30,43.998,30z"/><linearGradient id="QDO_sBS2xVZhTuMCWVRyQc" x1="40" x2="40" y1="3.667" y2="58.99" gradientUnits="userSpaceOnUse" spreadMethod="reflect"><stop offset="0" stop-color="#1a6dff"/><stop offset="1" stop-color="#c822ff"/></linearGradient><path fill="url(#QDO_sBS2xVZhTuMCWVRyQc)" d="M44,11c-4.411,0-8,3.589-8,8h2c0-3.309,2.691-6,6-6V11z"/><linearGradient id="QDO_sBS2xVZhTuMCWVRyQd" x1="48" x2="48" y1="3.667" y2="58.99" gradientUnits="userSpaceOnUse" spreadMethod="reflect"><stop offset="0" stop-color="#1a6dff"/><stop offset="1" stop-color="#c822ff"/></linearGradient><path fill="url(#QDO_sBS2xVZhTuMCWVRyQd)" d="M50,19c0,3.309-2.691,6-6,6v2c4.411,0,8-3.589,8-8H50z"/><linearGradient id="QDO_sBS2xVZhTuMCWVRyQe" x1="26" x2="26" y1="3.667" y2="58.99" gradientUnits="userSpaceOnUse" spreadMethod="reflect"><stop offset="0" stop-color="#1a6dff"/><stop offset="1" stop-color="#c822ff"/></linearGradient><path fill="url(#QDO_sBS2xVZhTuMCWVRyQe)" d="M35,27H25c-1.654,0-3,1.346-3,3v4v1v5.025C21.162,39.391,20.13,39,19,39c-2.757,0-5,2.243-5,5 s2.243,5,5,5s5-2.243,5-5v-9h12v5.025C35.162,39.391,34.13,39,33,39c-2.757,0-5,2.243-5,5s2.243,5,5,5s5-2.243,5-5v-9v-1v-4 C38,28.346,36.654,27,35,27z M19,47c-1.654,0-3-1.346-3-3s1.346-3,3-3s3,1.346,3,3S20.654,47,19,47z M33,47c-1.654,0-3-1.346-3-3 s1.346-3,3-3s3,1.346,3,3S34.654,47,33,47z M24,30c0-0.552,0.448-1,1-1h10c0.552,0,1,0.448,1,1v3H24V30z"/></svg> <span>M</span><span>U</span><span>S</span><span>I</span><span>C</span></span><br>'+
       '<img src="https://img.icons8.com/nolan/25/movie.png"/><span class="anim-text-flow text-uppercase"> <span>m</span><span>o</span><span>v</span><span>i</span><span>e</span></span><br>'+
       '<img src="https://img.icons8.com/nolan/25/exercise.png"/> <span class="txt anim-text-flow text-uppercase"><span>a</span><span>c</span><span>t</span><span>i</span><span>v</span><span>i</span><span>t</span><span>y</span></span>'
     ],
-    typeSpeed: 15,
+    typeSpeed: 40,
     backSpeed: 0,
     smartBackspace: false,
     loop: false,
     startDelay: 0
   });
-  var high_school = new Typed('.high_school', {
+  var portfolio = new Typed('.portfolio', {
     strings: [
-      'high_school'
+      '<span class="fs-1 fw-9">PORTFOLIO</span>'
     ],
     typeSpeed: 40,
     backSpeed: 0,
     smartBackspace: false,
+    showCursor : false,
+    loop: false,
+    startDelay: 0
+  });
+  var pizza = new Typed('.pizza', {
+    strings: [
+      '<span class="fs-1 fw-9">PORTFOLIO</span>'
+    ],
+    typeSpeed: 40,
+    backSpeed: 0,
+    smartBackspace: false,
+    showCursor : false,
+    loop: false,
+    startDelay: 0
+  });
+  var applab = new Typed('.applab', {
+    strings: [
+      '<span class="fs-1 fw-9">PORTFOLIO</span>'
+    ],
+    typeSpeed: 40,
+    backSpeed: 0,
+    smartBackspace: false,
+    showCursor : false,
     loop: false,
     startDelay: 0
   });
@@ -118,8 +142,8 @@ $(document).ready(function () {
     $('#s-home').removeClass('d-none');
     $('#s-about').addClass('d-none');
     $('#s-home').removeClass('d-block');
-    $('#s-education').addClass('d-none');
-    $('#s-education').removeClass('d-block');
+    $('#s-portfolio').addClass('d-none');
+    $('#s-portfolio').removeClass('d-block');
   });
 
   $('#btn-about').click(function () {
@@ -127,13 +151,13 @@ $(document).ready(function () {
     $('#s-about').removeClass('d-none');
     $('#s-home').addClass('d-none');
     $('#s-home').removeClass('d-block');
-    $('#s-education').addClass('d-none');
-    $('#s-education').removeClass('d-block');
+    $('#s-portfolio').addClass('d-none');
+    $('#s-portfolio').removeClass('d-block');
   });
 
-  $('#btn-education').click(function () {
-    $('#s-education').addClass('d-block');
-    $('#s-education').removeClass('d-none');
+  $('#btn-portfolio').click(function () {
+    $('#s-portfolio').addClass('d-block');
+    $('#s-portfolio').removeClass('d-none');
     $('#s-home').addClass('d-none');
     $('#s-home').removeClass('d-block');
     $('#s-about').addClass('d-none');
