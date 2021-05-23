@@ -1,9 +1,58 @@
+html,
+body {
+  height: 100%;
+}
+
+.h-90 {
+  height: 90%;
+}
+
 .font-50 {
   font-size: 50px;
 }
 
+.font-60 {
+  font-size: 60px;
+}
+
 .font-70 {
   font-size: 70px;
+}
+
+.opacity-1 {
+  opacity: 0.1;
+}
+
+.opacity-2 {
+  opacity: 0.2;
+}
+
+.opacity-3 {
+  opacity: 0.3;
+}
+
+.opacity-4 {
+  opacity: 0.4;
+}
+
+.opacity-5 {
+  opacity: 0.5;
+}
+
+.opacity-6 {
+  opacity: 0.6;
+}
+
+.opacity-7 {
+  opacity: 0.7;
+}
+
+.opacity-8 {
+  opacity: 0.8;
+}
+
+.opacity-9 {
+  opacity: 0.9;
 }
 
 .fw-1 {
@@ -42,36 +91,192 @@
   font-weight: 900;
 }
 
-nav {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-}
-
-nav div ul {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  list-style: none;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-}
-
 li {
-  list-style: none;
-  padding: auto;
-  display: inline;
+  margin-left: 2rem;
+  margin-right: 2rem;
 }
 
-a {
+li a {
   text-decoration: none !important;
   color: white !important;
+  padding: 0;
 }
 
 #section-home {
   position: absolute;
   z-index: 5;
+}
+
+#btn-h-contact {
+  background-color: #ffffff;
+  border-style: solid;
+  border-color: #272727;
+  border-width: 2px;
+  color: #272727;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  border-radius: 50px 50px;
+}
+
+#btn-h-contact:hover {
+  border-style: solid;
+  border-color: #ffffff;
+  border-width: 2px;
+  border-radius: 5px 50px;
+}
+
+.pre-port {
+  -webkit-filter: grayscale(100%);
+          filter: grayscale(100%);
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  height: 100%;
+}
+
+.pre-port .div-in {
+  -webkit-transition: 0.75s;
+  transition: 0.75s;
+  color: white;
+}
+
+.pre-port .div-in a {
+  -webkit-transition: 0.75s;
+  transition: 0.75s;
+  color: white;
+  text-decoration: none;
+}
+
+.pre-port #git-btn {
+  fill: white;
+}
+
+.pre-port:hover {
+  -webkit-filter: grayscale(0%);
+          filter: grayscale(0%);
+}
+
+.pre-port:hover .div-in {
+  background-color: white;
+  color: #272727;
+}
+
+.pre-port:hover .div-in a {
+  color: #272727;
+  text-decoration: none;
+}
+
+.pre-port:hover #git-btn {
+  fill: #272727;
+}
+
+.pre-port:hover .btn-try {
+  background-color: #272727;
+  border-style: solid;
+  border-color: white;
+  border-width: 2px;
+  color: white;
+  -webkit-transition: 0.25s;
+  transition: 0.25s;
+}
+
+.pre-port:hover .btn-try:hover {
+  background-color: white;
+  color: #272727;
+  border-style: solid;
+  border-color: #272727;
+}
+
+/*underline nav*/
+.underline-btn {
+  display: inline-block;
+  border-radius: 0;
+  color: #b2876f;
+  text-decoration: none;
+  position: relative;
+}
+
+.underline-btn:before, .underline-btn:after {
+  content: '';
+  display: block;
+  position: absolute;
+  height: 1px;
+  width: 0;
+}
+
+.underline-btn:before {
+  -webkit-transition: width 0s ease,background .4s ease;
+  transition: width 0s ease,background .4s ease;
+  left: 0;
+  right: 0;
+  bottom: 6px;
+}
+
+.underline-btn:after {
+  right: 2.2%;
+  bottom: 6px;
+  background: #ffffff;
+  -webkit-transition: width .4s ease;
+  transition: width .4s ease;
+}
+
+.underline-btn:hover:before {
+  width: 97.8%;
+  background: #ffffff;
+  -webkit-transition: width .4s ease;
+  transition: width .4s ease;
+}
+
+.underline-btn:hover:after {
+  width: 97.8%;
+  background: 0 0;
+  -webkit-transition: all 0s ease;
+  transition: all 0s ease;
+}
+
+/*------------------------------------*/
+@-webkit-keyframes pre-img-o {
+  0% {
+    -webkit-filter: grayscale(0%);
+            filter: grayscale(0%);
+  }
+  100% {
+    -webkit-filter: grayscale(100%);
+            filter: grayscale(100%);
+  }
+}
+
+@keyframes pre-img-o {
+  0% {
+    -webkit-filter: grayscale(0%);
+            filter: grayscale(0%);
+  }
+  100% {
+    -webkit-filter: grayscale(100%);
+            filter: grayscale(100%);
+  }
+}
+
+/*home botton contact*/
+.fill:hover,
+.fill:focus {
+  -webkit-box-shadow: inset 0 0 0 2em var(--hover);
+          box-shadow: inset 0 0 0 2em var(--hover);
+}
+
+.fill {
+  --color: #272727;
+  --hover: #272727;
+}
+
+button {
+  color: var(--color);
+  -webkit-transition: 0.25s;
+  transition: 0.25s;
+}
+
+button:hover, button:focus {
+  border-color: var(--hover);
+  color: #fff;
 }
 
 .anim-text-flow,
@@ -94,8 +299,8 @@ a {
 .anim-text-flow-hover:hover span {
   -webkit-animation-name: anim-text-flow-keys;
           animation-name: anim-text-flow-keys;
-  -webkit-animation-duration: 50s;
-          animation-duration: 50s;
+  -webkit-animation-duration: 35s;
+          animation-duration: 35s;
   -webkit-animation-iteration-count: infinite;
           animation-iteration-count: infinite;
   -webkit-animation-direction: alternate;
@@ -106,133 +311,133 @@ a {
 
 @-webkit-keyframes anim-text-flow-keys {
   0% {
-    color: #d6955c;
+    color: #d65cbe;
   }
   5% {
-    color: #5cd66a;
+    color: #5cd6ba;
   }
   10% {
-    color: #d66a5c;
+    color: #5cc2d6;
   }
   15% {
-    color: #d6875c;
+    color: #5c62d6;
   }
   20% {
-    color: #97d65c;
+    color: #d6d45c;
   }
   25% {
-    color: #d6665c;
+    color: #d65cc0;
   }
   30% {
-    color: #d6875c;
+    color: #89d65c;
   }
   35% {
-    color: #5c87d6;
+    color: #d6955c;
   }
   40% {
-    color: #975cd6;
+    color: #d67a5c;
   }
   45% {
-    color: #d6645c;
+    color: #d6c25c;
   }
   50% {
-    color: #5c8dd6;
+    color: #d6955c;
   }
   55% {
-    color: #5cd676;
+    color: #5cc0d6;
   }
   60% {
-    color: #5cbcd6;
+    color: #5c87d6;
   }
   65% {
-    color: #5cd6a5;
+    color: #d65c5c;
   }
   70% {
     color: #5c76d6;
   }
   75% {
-    color: #5ed65c;
+    color: #605cd6;
   }
   80% {
-    color: #8dd65c;
+    color: #5c9dd6;
   }
   85% {
-    color: #d6d65c;
+    color: #9bd65c;
   }
   90% {
-    color: #d6665c;
+    color: #d69b5c;
   }
   95% {
-    color: #7ad65c;
+    color: #5c87d6;
   }
   100% {
-    color: #d6a55c;
+    color: #5ca7d6;
   }
 }
 
 @keyframes anim-text-flow-keys {
   0% {
-    color: #d6955c;
+    color: #d65cbe;
   }
   5% {
-    color: #5cd66a;
+    color: #5cd6ba;
   }
   10% {
-    color: #d66a5c;
+    color: #5cc2d6;
   }
   15% {
-    color: #d6875c;
+    color: #5c62d6;
   }
   20% {
-    color: #97d65c;
+    color: #d6d45c;
   }
   25% {
-    color: #d6665c;
+    color: #d65cc0;
   }
   30% {
-    color: #d6875c;
+    color: #89d65c;
   }
   35% {
-    color: #5c87d6;
+    color: #d6955c;
   }
   40% {
-    color: #975cd6;
+    color: #d67a5c;
   }
   45% {
-    color: #d6645c;
+    color: #d6c25c;
   }
   50% {
-    color: #5c8dd6;
+    color: #d6955c;
   }
   55% {
-    color: #5cd676;
+    color: #5cc0d6;
   }
   60% {
-    color: #5cbcd6;
+    color: #5c87d6;
   }
   65% {
-    color: #5cd6a5;
+    color: #d65c5c;
   }
   70% {
     color: #5c76d6;
   }
   75% {
-    color: #5ed65c;
+    color: #605cd6;
   }
   80% {
-    color: #8dd65c;
+    color: #5c9dd6;
   }
   85% {
-    color: #d6d65c;
+    color: #9bd65c;
   }
   90% {
-    color: #d6665c;
+    color: #d69b5c;
   }
   95% {
-    color: #7ad65c;
+    color: #5c87d6;
   }
   100% {
-    color: #d6a55c;
+    color: #5ca7d6;
   }
 }
 
@@ -834,5 +1039,160 @@ a {
 .anim-text-flow-hover:hover span:nth-of-type(100) {
   -webkit-animation-delay: 0s;
           animation-delay: 0s;
+}
+
+.anim-border-flow,
+.anim-border-hover:hover {
+  /*
+     * Animation variables
+     */
+  /*
+     * Elements settings
+     */
+  -webkit-animation-name: anim-border-flow-keys;
+          animation-name: anim-border-flow-keys;
+  -webkit-animation-duration: 25s;
+          animation-duration: 25s;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+  -webkit-animation-direction: alternate;
+          animation-direction: alternate;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+  /*
+     * Keyframe loop
+     */
+}
+
+@-webkit-keyframes anim-border-flow-keys {
+  0% {
+    border-color: #5cd69b;
+  }
+  5% {
+    border-color: #5cadd6;
+  }
+  10% {
+    border-color: #a75cd6;
+  }
+  15% {
+    border-color: #5cd676;
+  }
+  20% {
+    border-color: #5cd6c4;
+  }
+  25% {
+    border-color: #5cd668;
+  }
+  30% {
+    border-color: #d65c68;
+  }
+  35% {
+    border-color: #c65cd6;
+  }
+  40% {
+    border-color: #d6b65c;
+  }
+  45% {
+    border-color: #66d65c;
+  }
+  50% {
+    border-color: #5cd66c;
+  }
+  55% {
+    border-color: #99d65c;
+  }
+  60% {
+    border-color: #5cd67c;
+  }
+  65% {
+    border-color: #5cd668;
+  }
+  70% {
+    border-color: #d6665c;
+  }
+  75% {
+    border-color: #d6765c;
+  }
+  80% {
+    border-color: #c4d65c;
+  }
+  85% {
+    border-color: #5cd6a3;
+  }
+  90% {
+    border-color: #7ad65c;
+  }
+  95% {
+    border-color: #5cabd6;
+  }
+  100% {
+    border-color: #5cc8d6;
+  }
+}
+
+@keyframes anim-border-flow-keys {
+  0% {
+    border-color: #5cd69b;
+  }
+  5% {
+    border-color: #5cadd6;
+  }
+  10% {
+    border-color: #a75cd6;
+  }
+  15% {
+    border-color: #5cd676;
+  }
+  20% {
+    border-color: #5cd6c4;
+  }
+  25% {
+    border-color: #5cd668;
+  }
+  30% {
+    border-color: #d65c68;
+  }
+  35% {
+    border-color: #c65cd6;
+  }
+  40% {
+    border-color: #d6b65c;
+  }
+  45% {
+    border-color: #66d65c;
+  }
+  50% {
+    border-color: #5cd66c;
+  }
+  55% {
+    border-color: #99d65c;
+  }
+  60% {
+    border-color: #5cd67c;
+  }
+  65% {
+    border-color: #5cd668;
+  }
+  70% {
+    border-color: #d6665c;
+  }
+  75% {
+    border-color: #d6765c;
+  }
+  80% {
+    border-color: #c4d65c;
+  }
+  85% {
+    border-color: #5cd6a3;
+  }
+  90% {
+    border-color: #7ad65c;
+  }
+  95% {
+    border-color: #5cabd6;
+  }
+  100% {
+    border-color: #5cc8d6;
+  }
 }
 /*# sourceMappingURL=main.css.map */

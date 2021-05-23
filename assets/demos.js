@@ -2,43 +2,53 @@ document.addEventListener('DOMContentLoaded', function () {
   new Typed('#brand', {
     strings: [
       'PORTFOLIO.ru^4000',
-      'KONGPOP.ru^4000'
-    ],
-    typeSpeed: 40,
-    backSpeed: 30,
-    smartBackspace: true,
-    loop: true
-  });
-});
-
-document.addEventListener('DOMContentLoaded', function () {
-  document.querySelector('.reset').addEventListener('click', function () {
-    s_home.reset(), s_home_p.reset(), s_about.reset(), skill.reset(), hobbies.reset(), portfolio.reset(), pizza.reset(), applab.reset();
-  });
-
-  var s_home = new Typed('.home', {
-    strings: [
-      '<span class="font-70 fw-9">Hello, My name is Kongpop.</span>',
-      '<span class="font-70 fw-9">I&apos;m Front-end web development.</span>'
+      'KONGPOP.ru^4000',
     ],
     typeSpeed: 40,
     backSpeed: 30,
     smartBackspace: true,
     loop: true,
-    backDelay: 1500,
+    showCursor: false
+  });
+});
+
+document.addEventListener('DOMContentLoaded', function () {
+  document.querySelector('.reset').addEventListener('click', function () {
+    s_home.reset(), s_home_p.reset(), s_about.reset(), skill.reset(), hobbies.reset(), portfolio.reset(), pizza.reset(), applab.reset(), s_contact.reset();
   });
 
-  var s_home_p = new Typed('.home-p', {
+  var s_home = new Typed('.home-1', {
+    strings: [
+      '<span class="font-70 fw-9">Hi I&apos;m Kongpop.</span>'
+    ],
+    typeSpeed: 40,
+    backSpeed: 30,
+    smartBackspace: true,
+    loop: false,
+    backDelay: 1500,
+    showCursor: false
+  });
+
+  var s_home_p = new Typed('.home-2', {
+    strings: [
+      '<span class="font-50 fw-9">I&apos;m Front-end web development.</span>'
+    ],
+    typeSpeed: 20,
+    loop: false,
+    showCursor: false
+  });
+
+  var s_home_p = new Typed('.home-3', {
     strings: [
       'I am new to building the web. But I would love to study how it works. I try to keep improving myself. In the future, I plan to do more back-end developers, but nowadays, I am still focused on font-end learning.'
     ],
     typeSpeed: 20,
     loop: false,
+    showCursor: false
   });
 
   var s_about = new Typed('.about', {
     strings: [
-      'Load about^500.^500.^500.^500',
       '<div class="border-bottom me-5 mb-3"><span class="fs-1 fw-9">About Me</span></div>NAME : Kongpop<br>SURNAME : Ruschatapaparpong<br>AGE : 23<br>GENDER : Male<br>NATIONALITY : Thai<br>ADDRESS : Thailand, Bangkok<br>MOBILE : 0876152508<br>GRADUATED : Thai-Nichi Institute of Technology'      
     ],
     typeSpeed: 40,
@@ -50,7 +60,6 @@ document.addEventListener('DOMContentLoaded', function () {
 
   var skill = new Typed('.skill', {
     strings: [
-      'Load skill^500.^500.^500.^500',
       '<div class="border-bottom me-5 mb-3"><span class="fs-1 fw-9">Codeing skill</span></div>'+
       '<svg xmlns="http://www.w3.org/2000/svg"  viewBox="0 0 48 48" width="25px" height="25px"><path fill="#E65100" d="M41,5H7l3,34l14,4l14-4L41,5L41,5z"/><path fill="#FF6D00" d="M24 8L24 39.9 35.2 36.7 37.7 8z"/><path fill="#FFF" d="M24,25v-4h8.6l-0.7,11.5L24,35.1v-4.2l4.1-1.4l0.3-4.5H24z M32.9,17l0.3-4H24v4H32.9z"/><path fill="#EEE" d="M24,30.9v4.2l-7.9-2.6L15.7,27h4l0.2,2.5L24,30.9z M19.1,17H24v-4h-9.1l0.7,12H24v-4h-4.6L19.1,17z"/></svg><span style="color:#FF6D00"> HTML</span><br>'+
       '<svg xmlns="http://www.w3.org/2000/svg"  viewBox="0 0 48 48" width="25px" height="25px"><path fill="#0277BD" d="M41,5H7l3,34l14,4l14-4L41,5L41,5z"/><path fill="#039BE5" d="M24 8L24 39.9 35.2 36.7 37.7 8z"/><path fill="#FFF" d="M33.1 13L24 13 24 17 28.9 17 28.6 21 24 21 24 25 28.4 25 28.1 29.5 24 30.9 24 35.1 31.9 32.5 32.6 21 32.6 21z"/><path fill="#EEE" d="M24,13v4h-8.9l-0.3-4H24z M19.4,21l0.2,4H24v-4H19.4z M19.8,27h-4l0.3,5.5l7.9,2.6v-4.2l-4.1-1.4L19.8,27z"/></svg><span style="color:#039BE5;"> CSS</span><br>'+
@@ -70,7 +79,6 @@ document.addEventListener('DOMContentLoaded', function () {
   });
   var hobbies = new Typed('.hobbies', {
     strings: [
-      'Load hobbies^500.^500.^500.^500',
       '<div class="border-bottom me-5 mb-3"><span class="fs-1 fw-9">Hobbies</span></div>'+
       '<span class="txt anim-text-flow"><svg xmlns="http://www.w3.org/2000/svg"  viewBox="0 0 64 64" width="25px" height="25px"><linearGradient id="7VQF0sKTAgnp1emj6oowda" x1="32" x2="32" y1="10.75" y2="53.762" gradientUnits="userSpaceOnUse" spreadMethod="reflect"><stop offset="0" stop-color="#1a6dff"/><stop offset="1" stop-color="#c822ff"/></linearGradient><path fill="url(#7VQF0sKTAgnp1emj6oowda)" d="M58,18h-4.538c-0.443,0-0.835-0.282-0.975-0.702l-0.627-1.877 C51.179,13.375,49.271,12,47.114,12H16.886c-2.157,0-4.064,1.375-4.746,3.421l-0.627,1.877C11.373,17.718,10.981,18,10.538,18H6 c-1.654,0-3,1.346-3,3v22c0,1.654,1.346,3,3,3h4.538c0.443,0,0.835,0.282,0.976,0.703l0.626,1.876 C12.821,50.625,14.729,52,16.886,52h30.229c2.157,0,4.064-1.375,4.746-3.421l0.627-1.877c0.14-0.42,0.531-0.702,0.975-0.702H58 c1.654,0,3-1.346,3-3V21C61,19.346,59.654,18,58,18z M59,43c0,0.551-0.448,1-1,1h-4.538c-1.307,0-2.461,0.832-2.872,2.07 l-0.626,1.876C49.554,49.175,48.409,50,47.114,50H16.886c-1.295,0-2.439-0.825-2.85-2.054l-0.625-1.875 C12.999,44.832,11.845,44,10.538,44H6c-0.552,0-1-0.449-1-1V21c0-0.551,0.448-1,1-1h4.538c1.307,0,2.461-0.832,2.872-2.07 l0.626-1.876c0.41-1.229,1.555-2.054,2.85-2.054h30.229c1.295,0,2.439,0.825,2.85,2.054l0.626,1.876 c0.412,1.238,1.566,2.07,2.872,2.07H58c0.552,0,1,0.449,1,1V43z"/><linearGradient id="7VQF0sKTAgnp1emj6oowdb" x1="32" x2="32" y1="10.75" y2="53.762" gradientUnits="userSpaceOnUse" spreadMethod="reflect"><stop offset="0" stop-color="#1a6dff"/><stop offset="1" stop-color="#c822ff"/></linearGradient><path fill="url(#7VQF0sKTAgnp1emj6oowdb)" d="M46,20H18c-1.654,0-3,1.346-3,3v18c0,1.654,1.346,3,3,3h28c1.654,0,3-1.346,3-3V23 C49,21.346,47.654,20,46,20z M47,41c0,0.551-0.448,1-1,1H18c-0.552,0-1-0.449-1-1V23c0-0.551,0.448-1,1-1h28c0.552,0,1,0.449,1,1V41 z"/><linearGradient id="7VQF0sKTAgnp1emj6oowdc" x1="54" x2="54" y1="10.75" y2="53.762" gradientUnits="userSpaceOnUse" spreadMethod="reflect"><stop offset="0" stop-color="#1a6dff"/><stop offset="1" stop-color="#c822ff"/></linearGradient><path fill="url(#7VQF0sKTAgnp1emj6oowdc)" d="M55,26h-2c-1.103,0-2,0.897-2,2v2c0,1.103,0.897,2,2,2h2c1.103,0,2-0.897,2-2v-2 C57,26.897,56.103,26,55,26z M55,30h-2v-2h2V30z"/><linearGradient id="7VQF0sKTAgnp1emj6oowdd" x1="54" x2="54" y1="10.75" y2="53.762" gradientUnits="userSpaceOnUse" spreadMethod="reflect"><stop offset="0" stop-color="#1a6dff"/><stop offset="1" stop-color="#c822ff"/></linearGradient><path fill="url(#7VQF0sKTAgnp1emj6oowdd)" d="M55,34h-2c-1.103,0-2,0.897-2,2v2c0,1.103,0.897,2,2,2h2c1.103,0,2-0.897,2-2v-2 C57,34.897,56.103,34,55,34z M55,38h-2v-2h2V38z"/><linearGradient id="7VQF0sKTAgnp1emj6oowde" x1="10" x2="10" y1="10.75" y2="53.762" gradientUnits="userSpaceOnUse" spreadMethod="reflect"><stop offset="0" stop-color="#1a6dff"/><stop offset="1" stop-color="#c822ff"/></linearGradient><path fill="url(#7VQF0sKTAgnp1emj6oowde)" d="M11 29L9 29 9 31 7 31 7 33 9 33 9 35 11 35 11 33 13 33 13 31 11 31z"/><linearGradient id="7VQF0sKTAgnp1emj6oowdf" x1="32" x2="32" y1="10.75" y2="53.762" gradientUnits="userSpaceOnUse" spreadMethod="reflect"><stop offset="0" stop-color="#1a6dff"/><stop offset="1" stop-color="#c822ff"/></linearGradient><path fill="url(#7VQF0sKTAgnp1emj6oowdf)" d="M30 46H34V48H30z"/><linearGradient id="7VQF0sKTAgnp1emj6oowdg" x1="38" x2="38" y1="10.75" y2="53.762" gradientUnits="userSpaceOnUse" spreadMethod="reflect"><stop offset="0" stop-color="#1a6dff"/><stop offset="1" stop-color="#c822ff"/></linearGradient><path fill="url(#7VQF0sKTAgnp1emj6oowdg)" d="M36 46H40V48H36z"/><linearGradient id="7VQF0sKTAgnp1emj6oowdh" x1="26" x2="26" y1="10.75" y2="53.762" gradientUnits="userSpaceOnUse" spreadMethod="reflect"><stop offset="0" stop-color="#1a6dff"/><stop offset="1" stop-color="#c822ff"/></linearGradient><path fill="url(#7VQF0sKTAgnp1emj6oowdh)" d="M24 46H28V48H24z"/><linearGradient id="7VQF0sKTAgnp1emj6oowdi" x1="38" x2="38" y1="28.833" y2="33.519" gradientUnits="userSpaceOnUse" spreadMethod="reflect"><stop offset="0" stop-color="#6dc7ff"/><stop offset="1" stop-color="#e6abff"/></linearGradient><path fill="url(#7VQF0sKTAgnp1emj6oowdi)" d="M38 29A2 2 0 1 0 38 33A2 2 0 1 0 38 29Z"/><linearGradient id="7VQF0sKTAgnp1emj6oowdj" x1="26" x2="26" y1="28.833" y2="33.519" gradientUnits="userSpaceOnUse" spreadMethod="reflect"><stop offset="0" stop-color="#6dc7ff"/><stop offset="1" stop-color="#e6abff"/></linearGradient><path fill="url(#7VQF0sKTAgnp1emj6oowdj)" d="M26 29A2 2 0 1 0 26 33A2 2 0 1 0 26 29Z"/><linearGradient id="7VQF0sKTAgnp1emj6oowdk" x1="32" x2="32" y1="32.5" y2="37.417" gradientUnits="userSpaceOnUse" spreadMethod="reflect"><stop offset="0" stop-color="#6dc7ff"/><stop offset="1" stop-color="#e6abff"/></linearGradient><path fill="url(#7VQF0sKTAgnp1emj6oowdk)" d="M29,34c0,1.657,1.343,3,3,3c1.657,0,3-1.343,3-3v-1h-6V34z"/></svg> <span>G</span><span>A</span><span>M</span><span>E</span></span><br>'+
       '<span class="txt anim-text-flow"><svg xmlns="http://www.w3.org/2000/svg"  viewBox="0 0 64 64" width="25px" height="25px"><linearGradient id="QDO_sBS2xVZhTuMCWVRyQa" x1="44" x2="44" y1="14.333" y2="23.002" gradientUnits="userSpaceOnUse" spreadMethod="reflect"><stop offset="0" stop-color="#6dc7ff"/><stop offset="1" stop-color="#e6abff"/></linearGradient><path fill="url(#QDO_sBS2xVZhTuMCWVRyQa)" d="M44 15A4 4 0 1 0 44 23A4 4 0 1 0 44 15Z"/><linearGradient id="QDO_sBS2xVZhTuMCWVRyQb" x1="32" x2="32" y1="3.667" y2="58.99" gradientUnits="userSpaceOnUse" spreadMethod="reflect"><stop offset="0" stop-color="#1a6dff"/><stop offset="1" stop-color="#c822ff"/></linearGradient><path fill="url(#QDO_sBS2xVZhTuMCWVRyQb)" d="M57,19c0-7.168-5.832-13-13-13c-3.475,0-6.74,1.352-9.195,3.806 c-1.222,1.221-2.159,2.646-2.803,4.194H14c-1.654,0-3,1.346-3,3v1h-1c-1.654,0-3,1.346-3,3v34c0,1.654,1.346,3,3,3h32 c1.654,0,3-1.346,3-3.001L44.999,54H46c1.654,0,3-1.346,3-3V31h-0.049c1.567-0.645,3.01-1.587,4.244-2.819 C55.648,25.729,57,22.469,57,19z M13,17c0-0.552,0.448-1,1-1h17.353c-0.153,0.654-0.265,1.32-0.316,2H13V17z M47,51 c0,0.552-0.448,1-1,1h-1.002l-0.012-20.053c0.684-0.051,1.355-0.164,2.014-0.318V51z M43.998,30c-0.004,0-0.008,0-0.012,0h-1.002 L43,55.008C43,55.56,42.552,56,42,56H10c-0.552,0-1-0.448-1-1V21c0-0.552,0.448-1,1-1h23v-1.001c0-2.939,1.141-5.701,3.218-7.778 C38.296,9.145,41.06,8.002,44,8.002c6.065,0,11,4.937,11,11.002c0,2.935-1.143,5.696-3.219,7.77C49.703,28.85,46.939,30,43.998,30z"/><linearGradient id="QDO_sBS2xVZhTuMCWVRyQc" x1="40" x2="40" y1="3.667" y2="58.99" gradientUnits="userSpaceOnUse" spreadMethod="reflect"><stop offset="0" stop-color="#1a6dff"/><stop offset="1" stop-color="#c822ff"/></linearGradient><path fill="url(#QDO_sBS2xVZhTuMCWVRyQc)" d="M44,11c-4.411,0-8,3.589-8,8h2c0-3.309,2.691-6,6-6V11z"/><linearGradient id="QDO_sBS2xVZhTuMCWVRyQd" x1="48" x2="48" y1="3.667" y2="58.99" gradientUnits="userSpaceOnUse" spreadMethod="reflect"><stop offset="0" stop-color="#1a6dff"/><stop offset="1" stop-color="#c822ff"/></linearGradient><path fill="url(#QDO_sBS2xVZhTuMCWVRyQd)" d="M50,19c0,3.309-2.691,6-6,6v2c4.411,0,8-3.589,8-8H50z"/><linearGradient id="QDO_sBS2xVZhTuMCWVRyQe" x1="26" x2="26" y1="3.667" y2="58.99" gradientUnits="userSpaceOnUse" spreadMethod="reflect"><stop offset="0" stop-color="#1a6dff"/><stop offset="1" stop-color="#c822ff"/></linearGradient><path fill="url(#QDO_sBS2xVZhTuMCWVRyQe)" d="M35,27H25c-1.654,0-3,1.346-3,3v4v1v5.025C21.162,39.391,20.13,39,19,39c-2.757,0-5,2.243-5,5 s2.243,5,5,5s5-2.243,5-5v-9h12v5.025C35.162,39.391,34.13,39,33,39c-2.757,0-5,2.243-5,5s2.243,5,5,5s5-2.243,5-5v-9v-1v-4 C38,28.346,36.654,27,35,27z M19,47c-1.654,0-3-1.346-3-3s1.346-3,3-3s3,1.346,3,3S20.654,47,19,47z M33,47c-1.654,0-3-1.346-3-3 s1.346-3,3-3s3,1.346,3,3S34.654,47,33,47z M24,30c0-0.552,0.448-1,1-1h10c0.552,0,1,0.448,1,1v3H24V30z"/></svg> <span>M</span><span>U</span><span>S</span><span>I</span><span>C</span></span><br>'+
@@ -96,7 +104,9 @@ document.addEventListener('DOMContentLoaded', function () {
   });
   var pizza = new Typed('.pizza', {
     strings: [
-      '<span class="fs-1 fw-9">PORTFOLIO</span>'
+      '<span class="fs-1 fw-9">#PIZZERIA.</span><br>'+
+      '<?xml version="1.0"?><svg id="git-btn" xmlns="http://www.w3.org/2000/svg"  viewBox="0 0 50 50" width="30px" height="30px">    <path d="M17.791,46.836C18.502,46.53,19,45.823,19,45v-5.4c0-0.197,0.016-0.402,0.041-0.61C19.027,38.994,19.014,38.997,19,39 c0,0-3,0-3.6,0c-1.5,0-2.8-0.6-3.4-1.8c-0.7-1.3-1-3.5-2.8-4.7C8.9,32.3,9.1,32,9.7,32c0.6,0.1,1.9,0.9,2.7,2c0.9,1.1,1.8,2,3.4,2 c2.487,0,3.82-0.125,4.622-0.555C21.356,34.056,22.649,33,24,33v-0.025c-5.668-0.182-9.289-2.066-10.975-4.975 c-3.665,0.042-6.856,0.405-8.677,0.707c-0.058-0.327-0.108-0.656-0.151-0.987c1.797-0.296,4.843-0.647,8.345-0.714 c-0.112-0.276-0.209-0.559-0.291-0.849c-3.511-0.178-6.541-0.039-8.187,0.097c-0.02-0.332-0.047-0.663-0.051-0.999 c1.649-0.135,4.597-0.27,8.018-0.111c-0.079-0.5-0.13-1.011-0.13-1.543c0-1.7,0.6-3.5,1.7-5c-0.5-1.7-1.2-5.3,0.2-6.6 c2.7,0,4.6,1.3,5.5,2.1C21,13.4,22.9,13,25,13s4,0.4,5.6,1.1c0.9-0.8,2.8-2.1,5.5-2.1c1.5,1.4,0.7,5,0.2,6.6c1.1,1.5,1.7,3.2,1.6,5 c0,0.484-0.045,0.951-0.11,1.409c3.499-0.172,6.527-0.034,8.204,0.102c-0.002,0.337-0.033,0.666-0.051,0.999 c-1.671-0.138-4.775-0.28-8.359-0.089c-0.089,0.336-0.197,0.663-0.325,0.98c3.546,0.046,6.665,0.389,8.548,0.689 c-0.043,0.332-0.093,0.661-0.151,0.987c-1.912-0.306-5.171-0.664-8.879-0.682C35.112,30.873,31.557,32.75,26,32.969V33 c2.6,0,5,3.9,5,6.6V45c0,0.823,0.498,1.53,1.209,1.836C41.37,43.804,48,35.164,48,25C48,12.318,37.683,2,25,2S2,12.318,2,25 C2,35.164,8.63,43.804,17.791,46.836z"/></svg> <a href="https://github.com/kongpop1235/Pizzaria.git" target="_blank">github</a>'+
+      '<a href="https://kongpop1235.github.io/Pizzaria/#" target="_blank"><button class="px-3 py-1 position-absolute bottom-0 end-0 fw-9 btn-try anim-text-flow-hover"><span>T</span><span>r</span><span>y</span><span>></span><span>></span></button></a>'
     ],
     typeSpeed: 40,
     backSpeed: 0,
@@ -107,9 +117,24 @@ document.addEventListener('DOMContentLoaded', function () {
   });
   var applab = new Typed('.applab', {
     strings: [
-      '<span class="fs-1 fw-9">PORTFOLIO</span>'
+      '<span class="fs-1 fw-9">AppLab</span><br>'+
+      '<?xml version="1.0"?><svg id="git-btn" xmlns="http://www.w3.org/2000/svg"  viewBox="0 0 50 50" width="30px" height="30px">    <path d="M17.791,46.836C18.502,46.53,19,45.823,19,45v-5.4c0-0.197,0.016-0.402,0.041-0.61C19.027,38.994,19.014,38.997,19,39 c0,0-3,0-3.6,0c-1.5,0-2.8-0.6-3.4-1.8c-0.7-1.3-1-3.5-2.8-4.7C8.9,32.3,9.1,32,9.7,32c0.6,0.1,1.9,0.9,2.7,2c0.9,1.1,1.8,2,3.4,2 c2.487,0,3.82-0.125,4.622-0.555C21.356,34.056,22.649,33,24,33v-0.025c-5.668-0.182-9.289-2.066-10.975-4.975 c-3.665,0.042-6.856,0.405-8.677,0.707c-0.058-0.327-0.108-0.656-0.151-0.987c1.797-0.296,4.843-0.647,8.345-0.714 c-0.112-0.276-0.209-0.559-0.291-0.849c-3.511-0.178-6.541-0.039-8.187,0.097c-0.02-0.332-0.047-0.663-0.051-0.999 c1.649-0.135,4.597-0.27,8.018-0.111c-0.079-0.5-0.13-1.011-0.13-1.543c0-1.7,0.6-3.5,1.7-5c-0.5-1.7-1.2-5.3,0.2-6.6 c2.7,0,4.6,1.3,5.5,2.1C21,13.4,22.9,13,25,13s4,0.4,5.6,1.1c0.9-0.8,2.8-2.1,5.5-2.1c1.5,1.4,0.7,5,0.2,6.6c1.1,1.5,1.7,3.2,1.6,5 c0,0.484-0.045,0.951-0.11,1.409c3.499-0.172,6.527-0.034,8.204,0.102c-0.002,0.337-0.033,0.666-0.051,0.999 c-1.671-0.138-4.775-0.28-8.359-0.089c-0.089,0.336-0.197,0.663-0.325,0.98c3.546,0.046,6.665,0.389,8.548,0.689 c-0.043,0.332-0.093,0.661-0.151,0.987c-1.912-0.306-5.171-0.664-8.879-0.682C35.112,30.873,31.557,32.75,26,32.969V33 c2.6,0,5,3.9,5,6.6V45c0,0.823,0.498,1.53,1.209,1.836C41.37,43.804,48,35.164,48,25C48,12.318,37.683,2,25,2S2,12.318,2,25 C2,35.164,8.63,43.804,17.791,46.836z"/></svg> <a href="https://github.com/kongpop1235/AppLap.git" target="_blank">github</a>'+
+      '<a href="https://kongpop1235.github.io/AppLap/" target="_blank"><button class="px-3 py-1 position-absolute bottom-0 end-0 fw-9 btn-try anim-text-flow-hover"><span>T</span><span>r</span><span>y</span><span>></span><span>></span></button></a>'
     ],
     typeSpeed: 40,
+    backSpeed: 0,
+    smartBackspace: false,
+    showCursor : false,
+    loop: false,
+    startDelay: 0
+  });
+  var s_contact = new Typed('.contact', {
+    strings: [
+      '<p class="fs-1 fw-9 m-0 anim-text-flow"><span>C</span><span>O</span><span>N</span><span>T</span><span>A</span><span>C</span><span>T</span> <span>M</span><span>E</span></p>'+
+      '<div class="anim-text-flow mb-3"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACgAAAAoCAYAAACM/rhtAAAABmJLR0QA/wD/AP+gvaeTAAAFgUlEQVRYhe2Xa2wUVRTHf+fOLqxlWxeDpYoGa0AQwRTjI6JGID6igsijkJCAgg8QVERJTIwmTdREiaamaCtRAY1EW6RFSHzF0BrQD6gRHxiCGiBBKcW06+62ne3OzPFDt9DuzpZthegH/slkZ8/ce87vnnvPzL1wVmf130pOl6PDldFbPGSGGFzBbRi96rzdp8Pvvwb8tUqHihd7A9HFwM60ebqgNW2hyOqrl0nqPwP8oSZebKWceuBSUZ1/RTpr+6pabwKzFfgliVV+1WOFx88I4J7XEyXGSy0wIqHMZ54goiwHLhL0dZA/M5qMVlgOHFZhvVE0y4eq7Zlg7bUrw80DBtQKNV8Xx/YDRuFgfwMZrARKAW9KS9F4qRDPr00gV+emUa0Xek5grDFy+bRlRfvPBODO6tg4Fd3fNKr1QuDIgABtxwTUgHiufSbgAJLiJtUYxDE5OXIDAion18Dvf+k1xrjrQHr10XY3aJWPKZSWg5VtZYK8mg+YGnmxdNW5n2bGGBhgCHCBYPf/qHo3qCvX9W0lqOtMAFqAqKJN+QDiabNfjIEBdsc/odZU92gz1csUBfIDHBJs9osxcEBzsvdxDyT7TUGPyYEyY6QxHz51U0uATSdiqDUROJQ3YFWVDk2a+CsAmi7+VjdHsPTzsauHNzHAF78NiAFg86vvJG56/N7wj6cErKhQ0xFJ7AAmw4kE0eriqE8CRXAB9lW2lRkrvyIRlRfHp4tEuod0QPG2v/T28UlP3X9+vF9AxsQW2sitwIfAvJ4FHPNMneM6I1Q4+VUR0+Zh7QEwEHU0vyIx6SJJ9hSJ8BPKEgkNeQCo7BewC65X4TfgNgB15TLg0MtjpAWoyBXUhijGv0gmPzrc12671uR0Bmcg/CLIhMw2WYAdllUA7MaRpyXorUOtT1a/H38rWGCvWTurb/ozPJUhOYukz9p8fGNbREKBl5LwILDFsVhpubLWjyc7g2lX1YuGHQXmraiNzUSlJtkZuuvh2tgjNQuKtvkRpLN0yiJZURub2YVUo5Iywh2vLQh/BrDig4Rve5NpsE331aPqBUU7OoY6E22LrUmRrUvr4nWL6uPFpwLJ1H11iZKldfEttki9bajHdFzZA+cXN29AgE2zh0c3lBeu6hKdaguTXJf9C+viD6F+r+4MqcrCLYnFXaI/d8LYpGWmbCgvXFU9v7hPyvIGTEr35af3yot2DUmEJ3cZqpIW6+bUJxrL62LjcrHN3Rq9dG594vOk0Te6DK8VtoWv2Tx32Dd+bXPFzVqDfqPorU1LxAYq7v4oUe96vInh+xkN8bVHW8IvfJfe3k9t1EA42r7ShhcU/RbVso/nFB3oz2+uuNmAeX4Lts8K/1hep1PahrQ/pvBcpLh95vRtHc+LesP4u/2JTuFigRVf3FP4bj7+csUdcAZ7a8t8cYHKqQ2dDU7AWwteLUoK1c0S5PZdd+Z/Fsk/gwMA7FHT7HMOAfOnNmqg6Us8cmzf+1PegF3/4pzXNE2cwfbNFTc7g+nfHetjI0Bf7vtU/5q5LLJmsBD9Kde5IhvQOnnvDGK6M1W/PnYjgOPYe4PB0LxUyv4wEAiVZdqetPz7ZwEm05vU8NHCaHRkNGtz0FDTdknkWOTItIr8ptMz+gBA0AQrXNGNQRNscn1sSeM/x1mAnUKXIOHmkdGLrIDxPQ83j4yWkmMHnKmeLaQNWECqV9DeNlt0qCJZm5HsIjHsBX3m2dGB9ueOOaV+QUv+iPieYf2U8mQNwAXHItHm0dHSkj8iR45eEO9je3ZUoD1p5Gbg+cz+2Xlt1FDQ6/hKoUSQnah25AszKIkUKDpdoDllCm5gmvSpF/+J74ZcAkxCybF8TxcgLvBTyhRszIQ7q7P6P+gf9EZDj88NCJMAAAAASUVORK5CYII="> <span>M</span><span>a</span><span>i</span><span>l</span> <span>:</span> <span>r</span><span>u</span><span>.</span><span>k</span><span>o</span><span>n</span><span>g</span><span>p</span><span>o</span><span>p</span><span>@</span><span>h</span><span>o</span><span>t</span><span>m</span><span>a</span><span>i</span><span>l</span><span>.</span><span>c</span><span>o</span><span>m</span></div>'+
+      '<img src="data:image/png;base64,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"/> <span class="anim-text-flow"><span>G</span><span>i</span><span>t</span><span>H</span><span>u</span><span>b</span> <span>:</span> <a href="https://github.com/kongpop1235" class="text-decoration-none" target="_blank><span class="anim-text-flow"><span>K</span><span>o</span><span>n</span><span>g</span><span>p</span><span>o</span><span>p</span><span>1</span><span>2</span><span>3</span><span>5</span></span></a>'
+    ],
+    typeSpeed: 20,
     backSpeed: 0,
     smartBackspace: false,
     showCursor : false,
@@ -141,9 +166,11 @@ $(document).ready(function () {
     $('#s-home').addClass('d-block');
     $('#s-home').removeClass('d-none');
     $('#s-about').addClass('d-none');
-    $('#s-home').removeClass('d-block');
+    $('#s-about').removeClass('d-block');
     $('#s-portfolio').addClass('d-none');
     $('#s-portfolio').removeClass('d-block');
+    $('#s-contact').addClass('d-none');
+    $('#s-contact').removeClass('d-block');
   });
 
   $('#btn-about').click(function () {
@@ -153,11 +180,26 @@ $(document).ready(function () {
     $('#s-home').removeClass('d-block');
     $('#s-portfolio').addClass('d-none');
     $('#s-portfolio').removeClass('d-block');
+    $('#s-contact').addClass('d-none');
+    $('#s-contact').removeClass('d-block');
   });
 
   $('#btn-portfolio').click(function () {
     $('#s-portfolio').addClass('d-block');
     $('#s-portfolio').removeClass('d-none');
+    $('#s-home').addClass('d-none');
+    $('#s-home').removeClass('d-block');
+    $('#s-about').addClass('d-none');
+    $('#s-about').removeClass('d-block');
+    $('#s-contact').addClass('d-none');
+    $('#s-contact').removeClass('d-block');
+  });
+
+  $('#btn-contact').click(function () {
+    $('#s-contact').addClass('d-block');
+    $('#s-contact').removeClass('d-none');
+    $('#s-portfolio').addClass('d-none');
+    $('#s-portfolio').removeClass('d-block');
     $('#s-home').addClass('d-none');
     $('#s-home').removeClass('d-block');
     $('#s-about').addClass('d-none');

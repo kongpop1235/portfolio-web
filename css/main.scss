@@ -1,8 +1,28 @@
+html,
+body {
+    height: 100%;
+}
+
+.h-90 {
+    height: 90%;
+}
+
 .font-50 {
     font-size: 50px;
 }
+
+.font-60 {
+    font-size: 60px;
+}
+
 .font-70 {
     font-size: 70px;
+}
+$x: 0;
+@for $i from 1 through 9 {
+    .opacity-#{$i} {
+        opacity: #{$i/10};
+    }
 }
 
 @for $i from 1 through 9 {
@@ -11,25 +31,18 @@
     }
 }
 
-nav {
-    display: flex;
-}
-
-nav div ul {
-    display: flex;
-    list-style: none;
-    justify-content: space-between;
+#s-home{
+    
 }
 
 li {
-    list-style: none;
-    padding: auto;
-    display: inline;
-}
-
-a {
-    text-decoration: none !important;
-    color: white !important;
+    margin-left: 2rem;
+    margin-right: 2rem;
+    a {
+        text-decoration: none !important;
+        color: white !important;
+        padding: 0;
+    }
 }
 
 #section-home {
@@ -37,14 +50,161 @@ a {
     z-index: 5;
 }
 
-//test
+#btn-h-contact {
+    background-color: #ffffff;
+    border-style: solid;
+    border-color: #272727;
+    border-width: 2px;
+    color: #272727;
+    transition: 0.5s;
+    border-radius: 50px 50px;
+}
+#btn-h-contact:hover {
+    border-style: solid;
+    border-color: #ffffff;
+    border-width: 2px;
+    border-radius: 5px 50px;
+}
+.pre-port {
+    filter: grayscale(100%);
+    transition: 0.5s;
+    height: 100%;
+    .div-in {
+        transition: 0.75s;
+        color: white;
+        a {
+            transition: 0.75s;
+            color: white;
+            text-decoration: none;
+        }
+    }
+    #git-btn {
+        fill: white;
+    }
+}
+.pre-port:hover {
+    filter: grayscale(0%);
+    .div-in {
+        background-color: white;
+        color: #272727;
+        a {
+            color: #272727;
+            text-decoration: none;
+        }
+    }
+    #git-btn {
+        fill: #272727;
+    }
+    .btn-try {
+        background-color: #272727;
+        border-style: solid;
+        border-color: white;
+        border-width: 2px;
+        color: white;
+        transition: 0.25s;
+    }
+    .btn-try:hover {
+        background-color: white;
+        color: #272727;
+        border-style: solid;
+        border-color: #272727;
+    }
+}
+/*underline nav*/
+.underline-btn{
+	display: inline-block;
+  	border-radius: 0;
+	color: #b2876f;
+  	text-decoration: none;
+	position: relative;
+	&:before,
+	&:after{
+		content: '';
+    	display: block;
+    	position: absolute;
+    	height: 1px;
+    	width: 0;
+
+	}
+	&:before{
+		transition: width 0s ease,background .4s ease;
+		left: 0;
+		right: 0;
+    	bottom: 6px;
+	}
+	&:after{
+		right: 2.2%;
+    	bottom: 6px;
+    	background: #ffffff;
+		transition: width .4s ease;
+	}
+	
+	&:hover{
+		&:before{
+			width: 97.8%;
+			background: #ffffff;
+    		transition: width .4s ease;
+		}
+		&:after{
+			width: 97.8%;
+    		background: 0 0;
+			transition: all 0s ease;
+		}
+	}
+}
+
+/*------------------------------------*/
+@-webkit-keyframes pre-img-o {
+    0% {
+        filter: grayscale(0%);
+    }
+    100% {
+        filter: grayscale(100%);
+    }
+}
+
+@keyframes pre-img-o {
+    0% {
+        filter: grayscale(0%);
+    }
+    100% {
+        filter: grayscale(100%);
+    }
+}
+
+/*home botton contact*/
+.fill:hover,
+.fill:focus {
+    box-shadow: inset 0 0 0 2em var(--hover);
+}
+$colors: (
+    fill: #272727,
+);
+@each $button, $color in $colors {
+    .#{$button} {
+        --color: #{$color};
+        --hover: #{adjust-hue($color, 45deg)};
+    }
+}
+
+button {
+    color: var(--color);
+    transition: 0.25s;
+
+    &:hover,
+    &:focus {
+        border-color: var(--hover);
+        color: #fff;
+    }
+}
+//text colorful
 .anim-text-flow,
 .anim-text-flow-hover:hover {
     /*
      * Animation variables
      */
     $animationSteps: 20;
-    $animationDuration: 50;
+    $animationDuration: 35;
     $animationElement: span;
     $animationElementsCount: 100;
     $delayBetweenLetters: 0.2;
@@ -79,6 +239,37 @@ a {
     @for $i from 1 through $animationElementsCount {
         #{$animationElement}:nth-of-type(#{$i}) {
             animation-delay: #{($i * $delayBetweenLetters) - $totalDelayTime}s;
+        }
+    }
+}
+
+.anim-border-flow,
+.anim-border-hover:hover {
+    /*
+     * Animation variables
+     */
+    $animationSteps: 20;
+    $animationDuration: 25;
+    $animationElementsCount: 100;
+    $delayBetweenLetters: 0.2;
+
+    /*
+     * Elements settings
+     */
+        animation-name: anim-border-flow-keys;
+        animation-duration: #{$animationDuration}s;
+        animation-iteration-count: infinite;
+        animation-direction: alternate;
+        animation-fill-mode: forwards;
+
+    /*
+     * Keyframe loop
+     */
+    @keyframes anim-border-flow-keys {
+        @for $i from 0 through $animationSteps {
+            #{percentage($i * (1 / $animationSteps))} {
+                border-color: hsla(random(365), 60, 60, 1);
+            }
         }
     }
 }
