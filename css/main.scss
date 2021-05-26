@@ -130,11 +130,11 @@ li {
 		transition: width 0s ease,background .4s ease;
 		left: 0;
 		right: 0;
-    	bottom: 6px;
+    	bottom: 0px;
 	}
 	&:after{
 		right: 2.2%;
-    	bottom: 6px;
+    	bottom: 0px;
     	background: #ffffff;
 		transition: width .4s ease;
 	}

@@ -208,12 +208,12 @@ li a {
   transition: width 0s ease,background .4s ease;
   left: 0;
   right: 0;
-  bottom: 6px;
+  bottom: 0px;
 }
 
 .underline-btn:after {
   right: 2.2%;
-  bottom: 6px;
+  bottom: 0px;
   background: #ffffff;
   -webkit-transition: width .4s ease;
   transition: width .4s ease;
@@ -311,133 +311,133 @@ button:hover, button:focus {
 
 @-webkit-keyframes anim-text-flow-keys {
   0% {
-    color: #d65cbe;
+    color: #5cd6d4;
   }
   5% {
-    color: #5cd6ba;
+    color: #8bd65c;
   }
   10% {
-    color: #5cc2d6;
+    color: #5cd670;
   }
   15% {
-    color: #5c62d6;
+    color: #5cd4d6;
   }
   20% {
-    color: #d6d45c;
+    color: #76d65c;
   }
   25% {
-    color: #d65cc0;
+    color: #af5cd6;
   }
   30% {
-    color: #89d65c;
+    color: #d6a95c;
   }
   35% {
-    color: #d6955c;
+    color: #5cd0d6;
   }
   40% {
-    color: #d67a5c;
+    color: #5cd69d;
   }
   45% {
-    color: #d6c25c;
+    color: #83d65c;
   }
   50% {
-    color: #d6955c;
+    color: #d6c05c;
   }
   55% {
-    color: #5cc0d6;
+    color: #d65ca9;
   }
   60% {
-    color: #5c87d6;
+    color: #5cb6d6;
   }
   65% {
-    color: #d65c5c;
+    color: #d6ad5c;
   }
   70% {
-    color: #5c76d6;
+    color: #5c97d6;
   }
   75% {
-    color: #605cd6;
+    color: #d65c74;
   }
   80% {
-    color: #5c9dd6;
+    color: #d65c9f;
   }
   85% {
-    color: #9bd65c;
+    color: #a15cd6;
   }
   90% {
-    color: #d69b5c;
+    color: #5cd67c;
   }
   95% {
-    color: #5c87d6;
+    color: #d6725c;
   }
   100% {
-    color: #5ca7d6;
+    color: #d65c9b;
   }
 }
 
 @keyframes anim-text-flow-keys {
   0% {
-    color: #d65cbe;
+    color: #5cd6d4;
   }
   5% {
-    color: #5cd6ba;
+    color: #8bd65c;
   }
   10% {
-    color: #5cc2d6;
+    color: #5cd670;
   }
   15% {
-    color: #5c62d6;
+    color: #5cd4d6;
   }
   20% {
-    color: #d6d45c;
+    color: #76d65c;
   }
   25% {
-    color: #d65cc0;
+    color: #af5cd6;
   }
   30% {
-    color: #89d65c;
+    color: #d6a95c;
   }
   35% {
-    color: #d6955c;
+    color: #5cd0d6;
   }
   40% {
-    color: #d67a5c;
+    color: #5cd69d;
   }
   45% {
-    color: #d6c25c;
+    color: #83d65c;
   }
   50% {
-    color: #d6955c;
+    color: #d6c05c;
   }
   55% {
-    color: #5cc0d6;
+    color: #d65ca9;
   }
   60% {
-    color: #5c87d6;
+    color: #5cb6d6;
   }
   65% {
-    color: #d65c5c;
+    color: #d6ad5c;
   }
   70% {
-    color: #5c76d6;
+    color: #5c97d6;
   }
   75% {
-    color: #605cd6;
+    color: #d65c74;
   }
   80% {
-    color: #5c9dd6;
+    color: #d65c9f;
   }
   85% {
-    color: #9bd65c;
+    color: #a15cd6;
   }
   90% {
-    color: #d69b5c;
+    color: #5cd67c;
   }
   95% {
-    color: #5c87d6;
+    color: #d6725c;
   }
   100% {
-    color: #5ca7d6;
+    color: #d65c9b;
   }
 }
 
@@ -1066,133 +1066,133 @@ button:hover, button:focus {
 
 @-webkit-keyframes anim-border-flow-keys {
   0% {
-    border-color: #5cd69b;
+    border-color: #d65c70;
   }
   5% {
-    border-color: #5cadd6;
-  }
-  10% {
-    border-color: #a75cd6;
-  }
-  15% {
-    border-color: #5cd676;
-  }
-  20% {
-    border-color: #5cd6c4;
-  }
-  25% {
-    border-color: #5cd668;
-  }
-  30% {
-    border-color: #d65c68;
-  }
-  35% {
-    border-color: #c65cd6;
-  }
-  40% {
-    border-color: #d6b65c;
-  }
-  45% {
-    border-color: #66d65c;
-  }
-  50% {
-    border-color: #5cd66c;
-  }
-  55% {
-    border-color: #99d65c;
-  }
-  60% {
-    border-color: #5cd67c;
-  }
-  65% {
-    border-color: #5cd668;
-  }
-  70% {
-    border-color: #d6665c;
-  }
-  75% {
-    border-color: #d6765c;
-  }
-  80% {
-    border-color: #c4d65c;
-  }
-  85% {
-    border-color: #5cd6a3;
-  }
-  90% {
-    border-color: #7ad65c;
-  }
-  95% {
     border-color: #5cabd6;
   }
+  10% {
+    border-color: #5cd699;
+  }
+  15% {
+    border-color: #87d65c;
+  }
+  20% {
+    border-color: #5cd6b1;
+  }
+  25% {
+    border-color: #b6d65c;
+  }
+  30% {
+    border-color: #5cd65e;
+  }
+  35% {
+    border-color: #89d65c;
+  }
+  40% {
+    border-color: #d65c5c;
+  }
+  45% {
+    border-color: #d65c74;
+  }
+  50% {
+    border-color: #5c76d6;
+  }
+  55% {
+    border-color: #d65c70;
+  }
+  60% {
+    border-color: #5cadd6;
+  }
+  65% {
+    border-color: #d65ca3;
+  }
+  70% {
+    border-color: #5cd6b6;
+  }
+  75% {
+    border-color: #d65e5c;
+  }
+  80% {
+    border-color: #cad65c;
+  }
+  85% {
+    border-color: #d6a35c;
+  }
+  90% {
+    border-color: #add65c;
+  }
+  95% {
+    border-color: #5cd6c4;
+  }
   100% {
-    border-color: #5cc8d6;
+    border-color: #bed65c;
   }
 }
 
 @keyframes anim-border-flow-keys {
   0% {
-    border-color: #5cd69b;
+    border-color: #d65c70;
   }
   5% {
-    border-color: #5cadd6;
-  }
-  10% {
-    border-color: #a75cd6;
-  }
-  15% {
-    border-color: #5cd676;
-  }
-  20% {
-    border-color: #5cd6c4;
-  }
-  25% {
-    border-color: #5cd668;
-  }
-  30% {
-    border-color: #d65c68;
-  }
-  35% {
-    border-color: #c65cd6;
-  }
-  40% {
-    border-color: #d6b65c;
-  }
-  45% {
-    border-color: #66d65c;
-  }
-  50% {
-    border-color: #5cd66c;
-  }
-  55% {
-    border-color: #99d65c;
-  }
-  60% {
-    border-color: #5cd67c;
-  }
-  65% {
-    border-color: #5cd668;
-  }
-  70% {
-    border-color: #d6665c;
-  }
-  75% {
-    border-color: #d6765c;
-  }
-  80% {
-    border-color: #c4d65c;
-  }
-  85% {
-    border-color: #5cd6a3;
-  }
-  90% {
-    border-color: #7ad65c;
-  }
-  95% {
     border-color: #5cabd6;
   }
+  10% {
+    border-color: #5cd699;
+  }
+  15% {
+    border-color: #87d65c;
+  }
+  20% {
+    border-color: #5cd6b1;
+  }
+  25% {
+    border-color: #b6d65c;
+  }
+  30% {
+    border-color: #5cd65e;
+  }
+  35% {
+    border-color: #89d65c;
+  }
+  40% {
+    border-color: #d65c5c;
+  }
+  45% {
+    border-color: #d65c74;
+  }
+  50% {
+    border-color: #5c76d6;
+  }
+  55% {
+    border-color: #d65c70;
+  }
+  60% {
+    border-color: #5cadd6;
+  }
+  65% {
+    border-color: #d65ca3;
+  }
+  70% {
+    border-color: #5cd6b6;
+  }
+  75% {
+    border-color: #d65e5c;
+  }
+  80% {
+    border-color: #cad65c;
+  }
+  85% {
+    border-color: #d6a35c;
+  }
+  90% {
+    border-color: #add65c;
+  }
+  95% {
+    border-color: #5cd6c4;
+  }
   100% {
-    border-color: #5cc8d6;
+    border-color: #bed65c;
   }
 }
 /*# sourceMappingURL=main.css.map */
